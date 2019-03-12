@@ -1,0 +1,255 @@
+0x00007340
+0377 829a 0702 0620 
+0000 0000 0000 0000 
+
+2320 1420 1104 0201 
+0500 0000 0000 0000
+
+3301 0101 0104 0000 
+0001 0000 0000 0000
+
+4307 6e6f 6e63 6541
+41bb bbbb bbbb bbbb
+
+0377 829a 070e 0621
+0000 0000 0000 0000
+
+2321 1420 1104 0201
+0500 0000 0000 0000
+
+3301 0101 0104 0000
+0001 0000 0000 0000
+
+4307 6e6f 6e63 6542
+42bb bbbb bbbb bbbb 
+
+
+pairing 3
+
+[0x00000000]> px 0x200 @ 0x7200
+- offset -   0 1  2 3  4 5  6 7  8 9  A B  C D  E F  0123456789ABCDEF
+0x00007200  3fff ffff ffff ffff ffff ffff ffff ffff  ?...............
+0x00007210  0212 0100 1988 0204 0000 0000 0000 0000  ................
+0x00007220  0377 829a 0702 061b 0000 0000 0000 0000  .w..............
+0x00007230  7c11 1130 e220 012c 1100 0000 0000 0000  |..0. .,........
+0x00007240  0377 829a 0715 061c 0000 0000 0000 0000  .w..............
+0x00007250  201c 1420 1104 0001 0d1a 0000 0000 0000   .. ............
+0x00007260  302a 2236 d81a 4000 0002 0000 0000 0000  0*"6..@.........
+0x00007270  4004 4b35 3230 2020 2020 2020 2020 2020  @.K520          
+0x00007280  0377 829a 0705 061d 0000 0000 0000 0000  .w..............
+0x00007290  211d 1420 1104 0201 0500 0000 0000 0000  !.. ............
+0x000072a0  3111 2233 4404 0000 0001 0000 0000 0000  1."3D...........
+0x000072b0  4104 6465 7631 bbbb bbbb bbbb bbbb bbbb  A.dev1..........
+0x000072c0  0377 829a 0717 061e 0000 0000 0000 0000  .w..............
+0x000072d0  221e 1420 1104 0201 0500 0000 0000 0000  ".. ............
+0x000072e0  3221 2223 2404 0000 0001 0000 0000 0000  2!"#$...........
+0x000072f0  4204 6465 7632 bbbb bbbb bbbb bbbb bbbb  B.dev2..........
+0x00007300  0377 829a 070d 061f 0000 0000 0000 0000  .w..............
+0x00007310  221f 1420 1104 0201 0500 0000 0000 0000  ".. ............
+0x00007320  3221 2223 2404 0000 0001 0000 0000 0000  2!"#$...........
+0x00007330  4204 6465 7633 bbbb bbbb bbbb bbbb bbbb  B.dev3..........
+0x00007340  ffff ffff ffff ffff ffff ffff ffff ffff  ................
+0x00007350  ffff ffff ffff ffff ffff ffff ffff ffff  ................
+0x00007360  ffff ffff ffff ffff ffff ffff ffff ffff  ................
+0x00007370  ffff ffff ffff ffff ffff ffff ffff ffff  ................
+0x00007380  ffff ffff ffff ffff ffff ffff ffff ffff  ................
+0x00007390  ffff ffff ffff ffff ffff ffff ffff ffff  ................
+0x000073a0  ffff ffff ffff ffff ffff ffff ffff ffff  ................
+0x000073b0  ffff ffff ffff ffff ffff ffff ffff ffff  ................
+0x000073c0  ffff ffff ffff ffff ffff ffff ffff ffff  ................
+0x000073d0  ffff ffff ffff ffff ffff ffff ffff ffff  ................
+0x000073e0  ffff ffff ffff ffff ffff ffff ffff ffff  ................
+0x000073f0  ffff ffff ffff ffff ffff ffff ffff ffff  ................
+
+pairing 4
+
+[0x00000000]> px 0x200 @ 0x7200
+- offset -   0 1  2 3  4 5  6 7  8 9  A B  C D  E F  0123456789ABCDEF
+0x00007200  3fff ffff ffff ffff ffff ffff ffff ffff  ?...............
+0x00007210  0212 0100 1988 0204 0000 0000 0000 0000  ................
+0x00007220  0377 829a 0702 061b 0000 0000 0000 0000  .w..............
+0x00007230  7c11 1130 e220 012c 1100 0000 0000 0000  |..0. .,........
+0x00007240  0377 829a 0715 061c 0000 0000 0000 0000  .w..............
+0x00007250  201c 1420 1104 0001 0d1a 0000 0000 0000   .. ............
+0x00007260  302a 2236 d81a 4000 0002 0000 0000 0000  0*"6..@.........
+0x00007270  4004 4b35 3230 2020 2020 2020 2020 2020  @.K520          
+0x00007280  0377 829a 0705 061d 0000 0000 0000 0000  .w..............
+0x00007290  211d 1420 1104 0201 0500 0000 0000 0000  !.. ............
+0x000072a0  3111 2233 4404 0000 0001 0000 0000 0000  1."3D...........
+0x000072b0  4104 6465 7631 bbbb bbbb bbbb bbbb bbbb  A.dev1..........
+0x000072c0  0377 829a 0717 061e 0000 0000 0000 0000  .w..............
+0x000072d0  221e 1420 1104 0201 0500 0000 0000 0000  ".. ............
+0x000072e0  3221 2223 2404 0000 0001 0000 0000 0000  2!"#$...........
+0x000072f0  4204 6465 7632 bbbb bbbb bbbb bbbb bbbb  B.dev2..........
+0x00007300  0377 829a 070d 061f 0000 0000 0000 0000  .w..............
+0x00007310  221f 1420 1104 0201 0500 0000 0000 0000  ".. ............
+0x00007320  3221 2223 2404 0000 0001 0000 0000 0000  2!"#$...........
+0x00007330  4204 6465 7633 bbbb bbbb bbbb bbbb bbbb  B.dev3..........
+0x00007340  0377 829a 0702 0620 0000 0000 0000 0000  .w..... ........
+0x00007350  2320 1420 1104 0201 0500 0000 0000 0000  # . ............
+0x00007360  3301 0101 0104 0000 0001 0000 0000 0000  3...............
+0x00007370  4307 6e6f 6e63 6541 41bb bbbb bbbb bbbb  C.nonceAA.......
+0x00007380  ffff ffff ffff ffff ffff ffff ffff ffff  ................
+0x00007390  ffff ffff ffff ffff ffff ffff ffff ffff  ................
+0x000073a0  ffff ffff ffff ffff ffff ffff ffff ffff  ................
+0x000073b0  ffff ffff ffff ffff ffff ffff ffff ffff  ................
+0x000073c0  ffff ffff ffff ffff ffff ffff ffff ffff  ................
+0x000073d0  ffff ffff ffff ffff ffff ffff ffff ffff  ................
+0x000073e0  ffff ffff ffff ffff ffff ffff ffff ffff  ................
+0x000073f0  ffff ffff ffff ffff ffff ffff ffff ffff  ................
+
+pairing 5
+[0x00000000]> px 0x200 @ 0x7200
+- offset -   0 1  2 3  4 5  6 7  8 9  A B  C D  E F  0123456789ABCDEF
+0x00007200  3fff ffff ffff ffff ffff ffff ffff ffff  ?............... <-- 0x3f marks used (0x7000 otherwise, 0x7f valid marker, too)  <-- keygen 0
+0x00007210  0212 0100 1988 0204 0000 0000 0000 0000  ................ <-- ?? pairing info dongle: 4B fw version, 2B WPID, 1B proto ?
+0x00007220  0377 829a 0702 061b 0000 0000 0000 0000  .w.............. <-- ?? 6B legit address, 1B 0x06, 1B counter                    <-- keygen 1
+0x00007230  7c11 1130 e220 012c 1100 0000 0000 0000  |..0. .,........
+0x00007240  0377 829a 0715 061c 0000 0000 0000 0000  .w.............. <-- address used by device ??                                   <-- keygen 2
+0x00007250  201c 1420 1104 0001 0d1a 0000 0000 0000   .. ............ <-- 0x20 pairing info of device 1
+0x00007260  302a 2236 d81a 4000 0002 0000 0000 0000  0*"6..@......... <-- 0x30 extended pairing info of device 1                      <-- keygen 3
+0x00007270  4004 4b35 3230 2020 2020 2020 2020 2020  @.K520           <-- 0x41 device name of device 1
+0x00007280  0377 829a 0705 061d 0000 0000 0000 0000  .w.............. <-- address used by device ??                                   <-- keygen 4
+0x00007290  211d 1420 1104 0201 0500 0000 0000 0000  !.. ............ <-- 0x21 pairing info of device 2
+0x000072a0  3111 2233 4404 0000 0001 0000 0000 0000  1."3D........... <-- 0x31 extended pairing info of device 2                      <-- keygen 5
+0x000072b0  4104 6465 7631 bbbb bbbb bbbb bbbb bbbb  A.dev1.......... <-- 0x41 device name of device 2
+0x000072c0  0377 829a 0717 061e 0000 0000 0000 0000  .w.............. <-- address used by device ??                                   <-- keygen 6
+0x000072d0  221e 1420 1104 0201 0500 0000 0000 0000  ".. ............ <-- 0x22 pairing info of device 3
+0x000072e0  3221 2223 2404 0000 0001 0000 0000 0000  2!"#$........... <-- 0x32 extended pairing info of device 3 
+0x000072f0  4204 6465 7632 bbbb bbbb bbbb bbbb bbbb  B.dev2.......... <-- 0x42 device name of device 3
+0x00007300  0377 829a 070d 061f 0000 0000 0000 0000  .w.............. <-- address used by device ??
+0x00007310  221f 1420 1104 0201 0500 0000 0000 0000  ".. ............ <-- 0x22 pairing info of device 3 (repeated after re-pair with same serial)
+0x00007320  3221 2223 2404 0000 0001 0000 0000 0000  2!"#$........... <-- 0x32 extended pairing info of device 3 (repeated after re-pair with same serial)
+0x00007330  4204 6465 7633 bbbb bbbb bbbb bbbb bbbb  B.dev3.......... <-- 0x42 device name of device 3 (repeated after re-pair with same serial)
+0x00007340  0377 829a 0702 0620 0000 0000 0000 0000  .w..... ........ <-- address used by device ??
+0x00007350  2320 1420 1104 0201 0500 0000 0000 0000  # . ............ <-- 0x23 pairing info of device 4
+0x00007360  3301 0101 0104 0000 0001 0000 0000 0000  3............... <-- 0x33 extended pairing info of device 4
+0x00007370  4307 6e6f 6e63 6541 41bb bbbb bbbb bbbb  C.nonceAA....... <-- 0x43 device name of device 4
+0x00007380  0377 829a 070e 0621 0000 0000 0000 0000  .w.....!........ <-- address used by device ??
+0x00007390  2321 1420 1104 0201 0500 0000 0000 0000  #!. ............ <-- 0x23 pairing info of device 4 (repeated after re-pair with same serial)
+0x000073a0  3301 0101 0104 0000 0001 0000 0000 0000  3............... <-- 0x33 extended pairing info of device 4 (repeated after re-pair with same serial)
+0x000073b0  4307 6e6f 6e63 6542 42bb bbbb bbbb bbbb  C.nonceBB....... <-- 0x43 device name of device 4 (repeated after re-pair with same serial)
+0x000073c0  ffff ffff ffff ffff ffff ffff ffff ffff  ................
+0x000073d0  ffff ffff ffff ffff ffff ffff ffff ffff  ................
+0x000073e0  ffff ffff ffff ffff ffff ffff ffff ffff  ................
+0x000073f0  ffff ffff ffff ffff ffff ffff ffff ffff  ................
+
+DEV DATA USED:   77 82 9a 07 02 06 1b 00 00 00 00 00 00 00 00 7c
+DEV DATA WANTED: 77 82 65 07 20 11 88 02 e3 cc 34 83 7f 38 ee 1b
+DEV DATA WANTED: 77 82 65 07 20 11 88 02 2a 22 36 d8 1a 40 xx xx
+xor                                      c9 ee 02 5b 65 78
+
+                 0  1  2  3  4  5  6  7  8  9  a  b  c  d  e  f
+
+
+
+
+
+0x0 = serial 1 ^ 55
+0x8 = serial 0 ^ serial 2 ^ 0xff
+
+0xc = serial 0 ^ 55
+
+
+
+
+
+Method to patch for memory read HID++ command
+----------------------------------------------
+
+
+/ (fcn) handle_HIDpp_SubID_0x81_GET_LONG_REGISTER_REQ (64 bits) 87
+|   handle_HIDpp_SubID_0x81_GET_LONG_REGISTER_REQ ();
+|      ::   ; CODE XREF from check_HIDpp_SubID (0x1d7a)
+|      ::   0x00004a20      e528           mov a, 0x28                 ; [0x10000028:1]=0 ; reg address
+|      ::   0x00004a22      244d           add a, #0x4d                ; fcn.0000004d ; fcn.0000004d
+|     ,===< 0x00004a24      602f           jz 0x4a55                   ; jump if reg is 0xb3 (device activity) ; unlikely
+|     |::   0x00004a26      24fe           add a, #0xfe
+|    ,====< 0x00004a28      7048           jnz 0x4a72                  ; jump if reg is 0xb5 (pairing information) ; likely
+|    ||::   0x00004a2a      e529           mov a, 0x29                 ; [0x10000029:1]=0 ; following code handles requests to pairing info reg 0xb5, iram 0x29 higher nible is request type, lower nibble device index
+|    ||::   0x00004a2c      d3             setb c
+|    ||::   0x00004a2d      947f           subb a, #0x7f
+|   ,=====< 0x00004a2f      5020           jnc 0x4a51                  ; jump if 0x29 (param 1) > 0x80 (error, use this as hook point for an additional command!!!) ; unlikely
+|   |||::   0x00004a31      af29           mov r7, 0x29                ; [0x10000029:1]=0 ; param1 to r7 (first nibble read type 0x2 pairing info, 0x3 extended pairing info, 0x4 device name; lower nibble is device ID)
+|   |||::   0x00004a33      121577         lcall search_trough_active_flash_page_in_x10_steps_for_entry_starting_with_r7_return_result_in_dptr_and_r6_r7_and_iram_6c_6d ; "-"
+|   |||::   0x00004a36      ef             mov a, r7
+|   |||::   0x00004a37      4e             orl a, r6
+|  ,======< 0x00004a38      7002           jnz 0x4a3c                  ; if r6 != 0x00 && r7 != 0x00 skip error code ; unlikely
+| ,=======< 0x00004a3a      8015           sjmp 0x4a51                 ; if r6 == 0x00 || r7 = 0x00 jump to "invalid value" error code
+| |||||::   ; CODE XREF from handle_HIDpp_SubID_0x81_GET_LONG_REGISTER_REQ (0x4a38)
+| |`------> 0x00004a3c      aa06           mov r2, r6                  ; [0x10000006:1]=0 ; r6,r7 hold address of marker from iram 0x29 in active flash page (first hit)
+| | |||::   0x00004a3e      a907           mov r1, r7                  ; [0x10000007:1]=0
+| | |||::   0x00004a40      1217a8         lcall store_beginning_at_x82d2_x01_r2_r1 ; 4a40..4a4c copies 0x10 byte from the found flash region to the USB response buffer starting at IRAM byte 0x29 (first parameter)
+| | |||::   0x00004a43      5177           acall fcn.inc_dptr_then_write_0_the_inc_dptr_then_set_a_to_10
+| | |||::   0x00004a45      f0             movx @dptr, a
+| | |||::   0x00004a46      7b00           mov r3, #0x00
+| | |||::   0x00004a48      7a00           mov r2, #0x00
+| | |||::   0x00004a4a      7929           mov r1, #0x29               ; ')'
+| | |||::   0x00004a4c      1214b3         lcall memcopy_SrcType_82d2_SrcAddr_82d3_82d4_length_82d5_82d6_DstType_r3_DstAddr_r2_r1
+| |,======< 0x00004a4f      801a           sjmp 0x4a6b
+| |||||::   ; CODE XREFS from handle_HIDpp_SubID_0x81_GET_LONG_REGISTER_REQ (0x4a2f, 0x4a3a)
+| `-`-----> 0x00004a51      7f03           mov r7, #0x03               ; set "invalid value" error
+|  |,=====< 0x00004a53      801f           sjmp 0x4a74                 ; jump to error code
+|  ||||::   ; CODE XREF from handle_HIDpp_SubID_0x81_GET_LONG_REGISTER_REQ (0x4a24)
+|  |||`---> 0x00004a55      7b00           mov r3, #0x00
+|  ||| ::   0x00004a57      7a00           mov r2, #0x00
+|  ||| ::   0x00004a59      7929           mov r1, #0x29               ; ')'
+|  ||| ::   0x00004a5b      f199           acall fcn.00004f99
+|  ||| ::   0x00004a5d      e4             clr a
+|  ||| ::   0x00004a5e      ff             mov r7, a
+|  ||| ::   ; CODE XREF from handle_HIDpp_SubID_0x81_GET_LONG_REGISTER_REQ (0x4a68)
+|  |||.---> 0x00004a5f      5115           acall dptr_to_8250_plus_r7
+|  |||:::   0x00004a61      1235ac         lcall fcn.000035ac          ; INIT_SFR_FOR_WATCHDOG
+|  |||:::   0x00004a64      a606           mov @r0, r6                 ; [0x10000006:1]=0
+|  |||:::   0x00004a66      0f             inc r7
+|  |||:::   0x00004a67      ef             mov a, r7
+|  |||`===< 0x00004a68      b406f4         cjne a, #0x06, 0x4a5f       ; likely
+|  ||| ::   ; CODE XREF from handle_HIDpp_SubID_0x81_GET_LONG_REGISTER_REQ (0x4a4f)
+|  `------> 0x00004a6b      e51c           mov a, 0x1c                 ; likely_device_aps_like_unifying_bit ; [0x1000001c:1]=0
+|   || ::   0x00004a6d      440c           orl a, #0x0c
+|   || `==< 0x00004a6f      021d5a         ljmp fcn.00001d5a
+|   ||  :   ; CODE XREF from handle_HIDpp_SubID_0x81_GET_LONG_REGISTER_REQ (0x4a28)
+|   |`----> 0x00004a72      7f02           mov r7, #0x02               ; set "invalid address" error, as the register isn't known ; "-"
+|   |   |   ; CODE XREF from handle_HIDpp_SubID_0x81_GET_LONG_REGISTER_REQ (0x4a53)
+\   `---`=< 0x00004a74      020025         ljmp handle_HIDpp_SubID_0x81_GET_LONG_REGISTER_REQ_respond_with_error_from_r7
+
+
+
+patch 
+------
+replace
+
+|      ::   0x00004a2c      d3             setb c                                                                                                                                                                  
+|      ::   0x00004a2d      947f           subb a, #0x7f     
+
+with
+
+|      ::   0x00004a2c      025500         ljmp 0x5500
+
+
+At 0x5500 insert
+--------------
+0x5500    d3             setb c                                                                                                                                                                  
+0x5501    947f           subb a, #0x7f           <-- doesn't enable carry if < 0x80, jump back to normal code
+0x5503    5003           jnc 0x550b              <-- jump behind return code, because a was > 0x80
+0x5505    024a2f         ljmp 0x4a2f             <-- continue where we left off
+0x55xx    c3             clr c                   <-- special code starts here, a holds src memtype (param 1 0x80: a = 0x00, 0x81 --> 1, 0x82 --> 2...)
+0x55xx    9082d2         mov dptr, #0x82d2       <-- src memtype for copy
+0x55xx    ae2a           mov r6, 0x2a            <-- param 2 (src addr high)
+0x55xx    af2b           mov r7, 0x2b            <-- param 3 (src addr low)
+0x55xx    1217ad         lcall 0x17ad            <-- store_beginning_at_DPTR_a_r2_r1 (a srcMemType, r2 srcAddrH, r1 srcAddrL)
+0x55xx    024a43         ljmp 0x4a43            <-- jump back to unodified code and let it do the memcopy (16 bytes)
+
+wx d3947f5003024a2f00 9082d2ae30af311217ad024a43
+
+
+25 26 27 28 29 30 31
+
+
+1 9
+2 a
+3 b
+4 c
+5 d
+6 e
+7 f

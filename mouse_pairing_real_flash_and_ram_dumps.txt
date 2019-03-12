@@ -1,0 +1,712 @@
+Unifying dongle found vid=046d,pid=c52b,bus=3,addr=4
+Using dongle USB config: Configuration 1
+Resetting dongle in order to release it from kernel (connected devices won't be usable)
+HID++ interface: vid=046d,pid=c52b,bus=3,addr=4,config=1,if=2,alt=0
+HID++ interface IN endpoint: ep #3 IN (address 0x83) interrupt - undefined usage [32 bytes]
+Out: 0x10 0xff 0x83 0xb5 0x03 0x00 0x00
+
+In: 0x11 0xff 0x83 0xb5 0x03 0x77 0x82 0x9a 0x07 0x0e 0x06 0x21 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00
+Dongle address: 0x77 0x82 0x9a 0x07, unknown data1: 0xe, unknown data2: 0x6, unknown rest: 0x21 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00
+!!!Request dongle firmware version from firmware register
+Out: 0x10 0xff 0x81 0xf1 0x01 0x00 0x00
+
+In: 0x10 0xff 0x81 0xf1 0x01 0x12 0x01
+USB Report type: HID++ short message, DeviceID: 0xff, SubID: GET REGISTER SHORT, Params: 0xf1 0x01 0x12 0x01
+	Register address: REGISTER FIRMWARE
+	Value: 0x01 0x12 0x01
+	Requested register: REGISTER FIRMWARE
+	Firmware version: 12.01
+!!!Request dongle firmware version from firmware register
+
+!!!Request dongle firmware build version from firmware register
+Out: 0x10 0xff 0x81 0xf1 0x02 0x00 0x00
+
+In: 0x10 0xff 0x81 0xf1 0x02 0x00 0x19
+USB Report type: HID++ short message, DeviceID: 0xff, SubID: GET REGISTER SHORT, Params: 0xf1 0x02 0x00 0x19
+	Register address: REGISTER FIRMWARE
+	Value: 0x02 0x00 0x19
+	Requested register: REGISTER FIRMWARE
+	Firmware build version: 0x0019
+!!!Request dongle firmware build version from firmware register
+
+!!!Request dongle bootloader version from firmware register
+Out: 0x10 0xff 0x81 0xf1 0x04 0x00 0x00
+
+In: 0x10 0xff 0x81 0xf1 0x04 0x02 0x14
+USB Report type: HID++ short message, DeviceID: 0xff, SubID: GET REGISTER SHORT, Params: 0xf1 0x04 0x02 0x14
+	Register address: REGISTER FIRMWARE
+	Value: 0x04 0x02 0x14
+	Requested register: REGISTER FIRMWARE
+	Bootloader version: 02.14
+!!!Request dongle bootloader version from firmware register
+
+!!!Enable wireless notifications
+Out: 0x10 0xff 0x80 0x00 0x00 0x01 0x00
+
+In: 0x10 0xff 0x80 0x00 0x00 0x00 0x00
+USB Report type: HID++ short message, DeviceID: 0xff, SubID: SET REGISTER SHORT, Params: 0x00 0x00 0x00 0x00
+	Register address: REGISTER WIRELESS NOTIFICATIONS
+	Value: 0x00 0x00 0x00
+!!!END enable wireless notifications
+
+!!!Get connected device info
+Out: 0x10 0xff 0x80 0x02 0x02 0x00 0x00
+
+In: 0x10 0x01 0x41 0x04 0x61 0x11 0x20
+
+In: 0x10 0x02 0x41 0x04 0x61 0x11 0x20
+
+In: 0x10 0x03 0x41 0x04 0x61 0x11 0x20
+
+In: 0x10 0x04 0x41 0x04 0x61 0x11 0x20
+
+In: 0x10 0xff 0x80 0x02 0x00 0x00 0x00
+USB Report type: HID++ short message, DeviceID: 0x01, SubID: DEVICE CONNECTION, Params: 0x04 0x61 0x11 0x20
+	Protocol type: 0x04
+	Device type: 0x01
+	Software present: false
+	Link encrypted: true
+	Link established: false
+	Connection with payload: false
+	Wireless PID: 0x2011
+USB Report type: HID++ short message, DeviceID: 0x02, SubID: DEVICE CONNECTION, Params: 0x04 0x61 0x11 0x20
+	Protocol type: 0x04
+	Device type: 0x01
+	Software present: false
+	Link encrypted: true
+	Link established: false
+	Connection with payload: false
+	Wireless PID: 0x2011
+USB Report type: HID++ short message, DeviceID: 0x03, SubID: DEVICE CONNECTION, Params: 0x04 0x61 0x11 0x20
+	Protocol type: 0x04
+	Device type: 0x01
+	Software present: false
+	Link encrypted: true
+	Link established: false
+	Connection with payload: false
+	Wireless PID: 0x2011
+USB Report type: HID++ short message, DeviceID: 0x04, SubID: DEVICE CONNECTION, Params: 0x04 0x61 0x11 0x20
+	Protocol type: 0x04
+	Device type: 0x01
+	Software present: false
+	Link encrypted: true
+	Link established: false
+	Connection with payload: false
+	Wireless PID: 0x2011
+USB Report type: HID++ short message, DeviceID: 0xff, SubID: SET REGISTER SHORT, Params: 0x02 0x00 0x00 0x00
+	Register address: REGISTER CONNECTION STATE
+	Value: 0x00 0x00 0x00
+!!!END get connected device info
+
+MemType 0x01 addr 0x8000: 01 0e 01 00 00 00 00 00 00 00 00 00 00 00 00 00
+MemType 0x01 addr 0x8010: 00 00 00 00 00 01 0e 00 00 00 00 00 00 00 00 00
+MemType 0x01 addr 0x8020: 00 00 00 00 00 00 00 00 00 00 01 0e 00 00 00 00
+MemType 0x01 addr 0x8030: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 01
+MemType 0x01 addr 0x8040: 0e 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+MemType 0x01 addr 0x8050: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+MemType 0x01 addr 0x8060: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+MemType 0x01 addr 0x8070: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+MemType 0x01 addr 0x8080: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+MemType 0x01 addr 0x8090: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+MemType 0x01 addr 0x80a0: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+MemType 0x01 addr 0x80b0: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+MemType 0x01 addr 0x80c0: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+MemType 0x01 addr 0x80d0: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+MemType 0x01 addr 0x80e0: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+MemType 0x01 addr 0x80f0: 00 00 00 00 00 00 00 00 00 00 00 00 77 82 9a 07
+MemType 0x01 addr 0x8100: 0b 06 21 1c 14 20 11 04 00 01 0d 1a 00 00 00 00
+MemType 0x01 addr 0x8110: 2a 22 36 d8 1a 40 00 00 00 20 07 d0 00 00 01 1d
+MemType 0x01 addr 0x8120: 14 20 11 04 02 01 05 00 00 00 00 00 11 22 33 44
+MemType 0x01 addr 0x8130: 04 00 00 00 00 20 07 d0 00 00 01 1f 14 20 11 04
+MemType 0x01 addr 0x8140: 02 01 05 00 00 00 00 00 21 22 23 24 04 00 00 00
+MemType 0x01 addr 0x8150: 00 20 07 d0 00 00 01 21 14 20 11 04 02 01 05 00
+MemType 0x01 addr 0x8160: 00 00 00 00 01 01 01 01 04 00 00 00 00 20 07 d0
+MemType 0x01 addr 0x8170: 00 00 01 05 08 40 05 04 00 01 00 00 00 00 00 00
+MemType 0x01 addr 0x8180: 01 02 03 04 1e 01 00 00 00 14 07 d0 00 00 01 06
+MemType 0x01 addr 0x8190: 08 40 06 04 00 01 00 00 00 00 00 00 01 02 03 04
+MemType 0x01 addr 0x81a0: 1e 01 00 00 00 14 07 d0 00 00 01 04 00 00 00 00
+MemType 0x01 addr 0x81b0: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+MemType 0x01 addr 0x81c0: 00 00 00 00 00 00 00 0e 00 00 00 00 00 00 00 00
+MemType 0x01 addr 0x81d0: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+MemType 0x01 addr 0x81e0: 02 7d 77 07 34 65 99 ee e3 88 80 11 38 4e 20 83
+MemType 0x01 addr 0x81f0: 02 7d 77 07 00 65 55 6a 00 88 13 11 1c 1d 20 00
+MemType 0x01 addr 0x8200: 02 7d 77 07 cc 65 ee 8d aa 88 58 11 de bf 20 dd
+MemType 0x01 addr 0x8210: 02 7d 77 07 bb 65 ee fe bb 88 e6 11 be 43 20 bb
+MemType 0x01 addr 0x8220: 02 7d 77 07 80 65 63 9a 3f 88 09 6a 38 04 40 07
+MemType 0x01 addr 0x8230: 02 7d 77 07 00 65 55 c0 00 88 c8 6a 85 9c 40 00
+MemType 0x01 addr 0x8240: 3f 20 01 0e 00 00 00 00 00 00 00 00 00 00 00 00
+MemType 0x01 addr 0x8250: 00 00 00 00 00 00 00 01 02 00 00 00 00 00 00 00
+MemType 0x01 addr 0x8260: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+MemType 0x01 addr 0x8270: 00 00 00 00 00 00 00 00 00 00 00 00 00 01 01 01
+MemType 0x01 addr 0x8280: 01 00 00 00 00 00 00 00 00 00 00 01 02 03 00 00
+MemType 0x01 addr 0x8290: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+MemType 0x01 addr 0x82a0: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+MemType 0x01 addr 0x82b0: 00 00 00 00 00 00 00 00 00 00 00 00 00 03 00 00
+MemType 0x01 addr 0x82c0: 81 ac 40 6a 00 02 06 04 00 0e 37 85 03 c9 06 00
+MemType 0x01 addr 0x82d0: 00 2a 01 82 d4 00 09 10 c6 c0 00 00 00 00 00 00
+MemType 0x01 addr 0x82e0: 00 00 00 00 00 00 00 10 ff 83 b5 81 82 e0 00 00
+MemType 0x01 addr 0x82f0: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+MemType 0x01 addr 0x8300: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+MemType 0x01 addr 0x8310: 00 04 14 1d 1f 27 28 0d 00 00 00 00 0a 0d 13 26
+MemType 0x01 addr 0x8320: 0e 00 00 00 d3 00 00 00 00 00 00 00 00 00 00 00
+MemType 0x01 addr 0x8330: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+MemType 0x01 addr 0x8340: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 0b
+MemType 0x01 addr 0x8350: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+MemType 0x01 addr 0x8360: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+MemType 0x01 addr 0x8370: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+MemType 0x01 addr 0x8380: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+MemType 0x01 addr 0x8390: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+MemType 0x01 addr 0x83a0: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+MemType 0x01 addr 0x83b0: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+MemType 0x01 addr 0x83c0: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+MemType 0x01 addr 0x83d0: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+MemType 0x01 addr 0x83e0: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+MemType 0x01 addr 0x83f0: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+MemType 0x01 addr 0x8400: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+MemType 0x01 addr 0x8410: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+MemType 0x01 addr 0x8420: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+MemType 0x01 addr 0x8430: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+MemType 0x01 addr 0x8440: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+MemType 0x01 addr 0x8450: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+MemType 0x01 addr 0x8460: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+MemType 0x01 addr 0x8470: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+MemType 0x01 addr 0x8480: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+MemType 0x01 addr 0x8490: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+MemType 0x01 addr 0x84a0: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+MemType 0x01 addr 0x84b0: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+MemType 0x01 addr 0x84c0: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+MemType 0x01 addr 0x84d0: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+MemType 0x01 addr 0x84e0: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+MemType 0x01 addr 0x84f0: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+MemType 0x01 addr 0x8500: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+MemType 0x01 addr 0x8510: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+MemType 0x01 addr 0x8520: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+MemType 0x01 addr 0x8530: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+MemType 0x01 addr 0x8540: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+MemType 0x01 addr 0x8550: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+MemType 0x01 addr 0x8560: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+MemType 0x01 addr 0x8570: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+MemType 0x01 addr 0x8580: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+MemType 0x01 addr 0x8590: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+MemType 0x01 addr 0x85a0: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+MemType 0x01 addr 0x85b0: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+MemType 0x01 addr 0x85c0: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+MemType 0x01 addr 0x85d0: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+MemType 0x01 addr 0x85e0: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+MemType 0x01 addr 0x85f0: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+MemType 0x01 addr 0x8600: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+MemType 0x01 addr 0x8610: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+MemType 0x01 addr 0x8620: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+MemType 0x01 addr 0x8630: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+MemType 0x01 addr 0x8640: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+MemType 0x01 addr 0x8650: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+MemType 0x01 addr 0x8660: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+MemType 0x01 addr 0x8670: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+MemType 0x01 addr 0x8680: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+MemType 0x01 addr 0x8690: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+MemType 0x01 addr 0x86a0: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+MemType 0x01 addr 0x86b0: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+MemType 0x01 addr 0x86c0: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+MemType 0x01 addr 0x86d0: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+MemType 0x01 addr 0x86e0: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+MemType 0x01 addr 0x86f0: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+MemType 0x01 addr 0x8700: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+MemType 0x01 addr 0x8710: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+MemType 0x01 addr 0x8720: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+MemType 0x01 addr 0x8730: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+MemType 0x01 addr 0x8740: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+MemType 0x01 addr 0x8750: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+MemType 0x01 addr 0x8760: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+MemType 0x01 addr 0x8770: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+MemType 0x01 addr 0x8780: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+MemType 0x01 addr 0x8790: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+MemType 0x01 addr 0x87a0: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+MemType 0x01 addr 0x87b0: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+MemType 0x01 addr 0x87c0: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+MemType 0x01 addr 0x87d0: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+MemType 0x01 addr 0x87e0: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+MemType 0x01 addr 0x87f0: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+Enable pairing for 60 seconds
+Out: 0x10 0xff 0x80 0xb2 0x01 0x01 0x3c
+
+In: 0x10 0xff 0x4a 0x01 0x00 0x00 0x00
+
+In: 0x10 0xff 0x80 0xb2 0x00 0x00 0x00
+USB Report type: HID++ short message, DeviceID: 0xff, SubID: RECEIVER LOCKING INFORMATION, Params: 0x01 0x00 0x00 0x00
+	Lock open: true
+	Lock error: no error
+USB Report type: HID++ short message, DeviceID: 0xff, SubID: SET REGISTER SHORT, Params: 0xb2 0x00 0x00 0x00
+	Register address: REGISTER PAIRING
+	Value: 0x00 0x00 0x00
+... Enable pairing response (should be enabled)
+
+Printing follow up reports ...
+
+In: 0x10 0x05 0x41 0x04 0x62 0x6a 0x40
+USB Report type: HID++ short message, DeviceID: 0x05, SubID: DEVICE CONNECTION, Params: 0x04 0x62 0x6a 0x40
+	Protocol type: 0x04
+	Device type: 0x02
+	Software present: false
+	Link encrypted: true
+	Link established: false
+	Connection with payload: false
+	Wireless PID: 0x406a
+DEVICE CONNECTION ON INDEX: 05 TYPE: MOUSE WPID: 0x406a
+
+In: 0x20 0x05 0x42 0x01 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00
+USB Report type: DJ Report short, DeviceID: 0x05, DJ Type: NOTIFICATION CONNECTION STATUS, Params: 0x01 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00
+
+In: 0x20 0x05 0x41 0x00 0x6a 0x40 0x1e 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00
+USB Report type: DJ Report short, DeviceID: 0x05, DJ Type: NOTIFICATION DEVICE PAIRED, Params: 0x00 0x6a 0x40 0x1e 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00
+	Special func: 0x00 (more Notifications: false other fields not relevant: false)
+	wpid: 0x406a
+	report bitfield: 0x1e000000
+		bitfield keyboard: false
+		bitfield mouse: false
+		bitfield consumer control: false
+		bitfield system control: false
+		bitfield media center: false
+		bitfield LED: false
+		bitfield HID++ short: false
+		bitfield HID++ long: false
+
+In: 0x10 0xff 0x4a 0x00 0x00 0x00 0x00
+USB Report type: HID++ short message, DeviceID: 0xff, SubID: RECEIVER LOCKING INFORMATION, Params: 0x00 0x00 0x00 0x00
+	Lock open: false
+	Lock error: no error
+Pairing mode exited: <nil>
+!!!!Parse successive input reports in endless loop...
+
+In: 0x10 0x05 0x41 0x04 0xa2 0x6a 0x40
+USB Report type: HID++ short message, DeviceID: 0x05, SubID: DEVICE CONNECTION, Params: 0x04 0xa2 0x6a 0x40
+	Protocol type: 0x04
+	Device type: 0x02
+	Software present: false
+	Link encrypted: true
+	Link established: true
+	Connection with payload: true
+	Wireless PID: 0x406a
+
+In: 0x20 0x05 0x42 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00
+USB Report type: DJ Report short, DeviceID: 0x05, DJ Type: NOTIFICATION CONNECTION STATUS, Params: 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00
+
+In: 0x11 0x05 0x04 0x00 0x01 0x01 0x01 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00
+USB Report type: HID++ long message, DeviceID: 0x05, SubID: Unknown HID++ SubID 04, Params: 0x00 0x01 0x01 0x01 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00
+
+In: 0x10 0x03 0x41 0x04 0x61 0x11 0x20
+USB Report type: HID++ short message, DeviceID: 0x03, SubID: DEVICE CONNECTION, Params: 0x04 0x61 0x11 0x20
+	Protocol type: 0x04
+	Device type: 0x01
+	Software present: false
+	Link encrypted: true
+	Link established: false
+	Connection with payload: false
+	Wireless PID: 0x2011
+
+In: 0x20 0x03 0x42 0x01 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00
+USB Report type: DJ Report short, DeviceID: 0x03, DJ Type: NOTIFICATION CONNECTION STATUS, Params: 0x01 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00
+
+In: 0x20 0x05 0x02 0x00 0x00 0x05 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00
+USB Report type: DJ Report short, DeviceID: 0x05, DJ Type: RF MOUSE, Params: 0x00 0x00 0x05 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00
+
+In: 0x20 0x05 0x02 0x00 0x00 0x05 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00
+USB Report type: DJ Report short, DeviceID: 0x05, DJ Type: RF MOUSE, Params: 0x00 0x00 0x05 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00
+
+In: 0x20 0x05 0x02 0x00 0x00 0x0c 0xf0 0xff 0x00 0x00 0x00 0x00 0x00 0x00 0x00
+USB Report type: DJ Report short, DeviceID: 0x05, DJ Type: RF MOUSE, Params: 0x00 0x00 0x0c 0xf0 0xff 0x00 0x00 0x00 0x00 0x00 0x00 0x00
+
+In: 0x20 0x05 0x02 0x00 0x00 0x0f 0xf0 0xff 0x00 0x00 0x00 0x00 0x00 0x00 0x00
+USB Report type: DJ Report short, DeviceID: 0x05, DJ Type: RF MOUSE, Params: 0x00 0x00 0x0f 0xf0 0xff 0x00 0x00 0x00 0x00 0x00 0x00 0x00
+
+In: 0x20 0x05 0x02 0x00 0x00 0x10 0xf0 0xff 0x00 0x00 0x00 0x00 0x00 0x00 0x00
+USB Report type: DJ Report short, DeviceID: 0x05, DJ Type: RF MOUSE, Params: 0x00 0x00 0x10 0xf0 0xff 0x00 0x00 0x00 0x00 0x00 0x00 0x00
+
+In: 0x20 0x05 0x02 0x00 0x00 0x16 0xf0 0xff 0x00 0x00 0x00 0x00 0x00 0x00 0x00
+USB Report type: DJ Report short, DeviceID: 0x05, DJ Type: RF MOUSE, Params: 0x00 0x00 0x16 0xf0 0xff 0x00 0x00 0x00 0x00 0x00 0x00 0x00
+
+In: 0x20 0x05 0x02 0x00 0x00 0x18 0xe0 0xff 0x00 0x00 0x00 0x00 0x00 0x00 0x00
+USB Report type: DJ Report short, DeviceID: 0x05, DJ Type: RF MOUSE, Params: 0x00 0x00 0x18 0xe0 0xff 0x00 0x00 0x00 0x00 0x00 0x00 0x00
+
+... more mouse frames ...
+
+second memdump after mouse frames:
+---------------------------------
+
+MemType 0x01 addr 0x8000: 01 0e 01 00 00 00 00 00 00 00 00 00 00 00 00 00
+MemType 0x01 addr 0x8010: 00 00 00 00 00 01 0e 00 00 00 00 00 00 00 00 00
+MemType 0x01 addr 0x8020: 00 00 00 00 00 00 00 00 00 00 01 0e 00 00 00 00
+MemType 0x01 addr 0x8030: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 01
+MemType 0x01 addr 0x8040: 0e 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+MemType 0x01 addr 0x8050: 00 00 00 00 05 0f 05 03 45 f4 02 3c 7c 00 00 00
+MemType 0x01 addr 0x8060: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+MemType 0x01 addr 0x8070: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+MemType 0x01 addr 0x8080: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+MemType 0x01 addr 0x8090: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+MemType 0x01 addr 0x80a0: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+MemType 0x01 addr 0x80b0: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+MemType 0x01 addr 0x80c0: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+MemType 0x01 addr 0x80d0: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+MemType 0x01 addr 0x80e0: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+MemType 0x01 addr 0x80f0: 00 00 00 00 00 00 00 00 00 00 00 00 77 82 9a 07
+MemType 0x01 addr 0x8100: 15 06 22 1c 14 20 11 04 00 01 0d 1a 00 00 00 00
+MemType 0x01 addr 0x8110: 2a 22 36 d8 1a 40 00 00 00 20 07 d0 00 00 01 1d
+MemType 0x01 addr 0x8120: 14 20 11 04 02 01 05 00 00 00 00 00 11 22 33 44
+MemType 0x01 addr 0x8130: 04 00 00 00 00 20 07 d0 00 00 01 1f 14 20 11 04
+MemType 0x01 addr 0x8140: 02 01 05 00 00 00 00 00 21 22 23 24 04 00 00 00
+MemType 0x01 addr 0x8150: 00 20 03 e8 00 00 01 21 14 20 11 04 02 01 05 00
+MemType 0x01 addr 0x8160: 00 00 00 00 01 01 01 01 04 00 00 00 00 20 07 d0
+MemType 0x01 addr 0x8170: 00 00 01 22 08 40 6a 04 02 02 07 00 00 00 00 00
+MemType 0x01 addr 0x8180: ed 22 3c 7c 1e 00 00 00 00 14 04 58 01 8b 01 06
+MemType 0x01 addr 0x8190: 08 40 06 04 00 01 00 00 00 00 00 00 01 02 03 04
+MemType 0x01 addr 0x81a0: 1e 01 00 00 00 14 07 d0 00 00 01 05 00 00 00 00
+MemType 0x01 addr 0x81b0: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+MemType 0x01 addr 0x81c0: 00 00 00 00 00 00 00 0f 05 03 45 f4 02 3c 7c f6
+MemType 0x01 addr 0x81d0: 00 00 00 00 00 00 00 00 00 00 00 9b 00 00 00 00
+MemType 0x01 addr 0x81e0: 02 7d 77 07 34 65 99 ee e3 88 80 11 38 4e 20 83
+MemType 0x01 addr 0x81f0: 02 7d 77 07 00 65 55 6a 00 88 13 11 1c 1d 20 00
+MemType 0x01 addr 0x8200: 02 7d 77 07 cc 65 ee 8d aa 88 58 11 de bf 20 dd
+MemType 0x01 addr 0x8210: 02 7d 77 07 bb 65 ee fe bb 88 e6 11 be 43 20 bb
+MemType 0x01 addr 0x8220: 02 7d 77 07 77 65 c6 cc e0 88 da 6a ca f5 40 60
+MemType 0x01 addr 0x8230: 02 7d 77 07 00 65 55 c0 00 88 c8 6a 85 9c 40 00
+MemType 0x01 addr 0x8240: 2f 20 01 0e 00 00 00 00 00 00 00 00 00 00 00 00
+MemType 0x01 addr 0x8250: 00 00 00 00 54 00 00 01 04 00 00 00 00 00 00 00
+MemType 0x01 addr 0x8260: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+MemType 0x01 addr 0x8270: 02 00 00 ff 0f 00 00 00 00 00 00 00 00 01 01 01
+MemType 0x01 addr 0x8280: 01 01 00 00 00 00 00 00 00 00 00 02 03 01 03 22
+MemType 0x01 addr 0x8290: 08 40 6a 04 02 02 07 00 00 00 00 00 25 ca cc a0
+MemType 0x01 addr 0x82a0: e0 93 77 60 ed 22 3c 7c 1e 00 00 00 01 00 0e 4d
+MemType 0x01 addr 0x82b0: 58 20 41 6e 79 77 68 65 72 65 20 32 53 03 01 01
+MemType 0x01 addr 0x82c0: 81 ac 0e 05 00 07 06 81 b1 00 37 85 03 c9 06 00
+MemType 0x01 addr 0x82d0: 00 2a 01 82 d4 00 09 10 c6 c0 00 00 00 00 00 00
+MemType 0x01 addr 0x82e0: 00 00 00 00 00 00 00 10 ff 83 b5 81 82 e0 00 00
+MemType 0x01 addr 0x82f0: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+MemType 0x01 addr 0x8300: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+MemType 0x01 addr 0x8310: 00 04 14 1d 1f 27 28 0d 00 00 00 00 0a 0d 13 26
+MemType 0x01 addr 0x8320: 0e 00 00 00 5c 00 00 00 00 00 00 00 00 00 00 00
+MemType 0x01 addr 0x8330: 00 00 00 00 00 00 00 00 44 0e 4d 58 20 41 6e 79
+MemType 0x01 addr 0x8340: 77 68 65 72 65 20 32 53 c9 00 00 00 00 00 00 0b
+MemType 0x01 addr 0x8350: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+MemType 0x01 addr 0x8360: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+
+Old keys
+MemType 0x01 addr 0x81c0: 00 00 00 00 00 00 00 0e 00 00 00 00 00 00 00 00
+MemType 0x01 addr 0x81d0: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+MemType 0x01 addr 0x81e0: 02 7d 77 07 34 65 99 ee e3 88 80 11 38 4e 20 83
+MemType 0x01 addr 0x81f0: 02 7d 77 07 00 65 55 6a 00 88 13 11 1c 1d 20 00
+MemType 0x01 addr 0x8200: 02 7d 77 07 cc 65 ee 8d aa 88 58 11 de bf 20 dd
+MemType 0x01 addr 0x8210: 02 7d 77 07 bb 65 ee fe bb 88 e6 11 be 43 20 bb
+MemType 0x01 addr 0x8220: 02 7d 77 07 80 65 63 9a 3f 88 09 6a 38 04 40 07
+MemType 0x01 addr 0x8230: 02 7d 77 07 00 65 55 c0 00 88 c8 6a 85 9c 40 00
+MemType 0x01 addr 0x8240: 3f 20 01 0e 00 00 00 00 00 00 00 00 00 00 00 00
+
+
+MemType 0x01 addr 0x81c0: 00 00 00 00 00 00 00 0f 05 03 45 f4 02 3c 7c f6
+MemType 0x01 addr 0x81d0: 00 00 00 00 00 00 00 00 00 00 00 9b 00 00 00 00
+MemType 0x01 addr 0x81e0: 02 7d 77 07 34 65 99 ee e3 88 80 11 38 4e 20 83
+MemType 0x01 addr 0x81f0: 02 7d 77 07 00 65 55 6a 00 88 13 11 1c 1d 20 00
+MemType 0x01 addr 0x8200: 02 7d 77 07 cc 65 ee 8d aa 88 58 11 de bf 20 dd
+MemType 0x01 addr 0x8210: 02 7d 77 07 bb 65 ee fe bb 88 e6 11 be 43 20 bb
+MemType 0x01 addr 0x8220: 02 7d 77 07 77 65 c6 cc e0 88 da 6a ca f5 40 60
+MemType 0x01 addr 0x8230: 02 7d 77 07 00 65 55 c0 00 88 c8 6a 85 9c 40 00
+MemType 0x01 addr 0x8240: 2f 20 01 0e 00 00 00 00 00 00 00 00 00 00 00 00
+MemType 0x01 addr 0x8250: 00 00 00 00 54 00 00 01 04 00 00 00 00 00 00 00
+MemType 0x01 addr 0x8260: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+
+
+Memory region 0x7000 in flash dump:
+--------------------------------------
+
+	FF:FF:FF:FF:FF:FF:FF:FF:FF:FF:FF:FF:FF:FF:FF:FF
+0x6e00:	3F:FF:FF:FF:FF:FF:FF:FF:FF:FF:FF:FF:FF:FF:FF:FF
+0x6e10:	02:12:01:00:19:88:02:04:00:00:00:00:00:00:00:00
+0x6e20:	03:77:82:9A:07:02:06:1B:00:00:00:00:00:00:00:00
+0x6e30:	7C:11:11:30:E2:20:01:2C:11:00:00:00:00:00:00:00
+0x6e40:	03:77:82:9A:07:15:06:1C:00:00:00:00:00:00:00:00
+0x6e50:	20:1C:14:20:11:04:00:01:0D:1A:00:00:00:00:00:00
+0x6e60:	30:2A:22:36:D8:1A:40:00:00:02:00:00:00:00:00:00
+0x6e70:	40:04:4B:35:32:30:20:20:20:20:20:20:20:20:20:20
+0x6e80:	03:77:82:9A:07:05:06:1D:00:00:00:00:00:00:00:00
+0x6e90:	21:1D:14:20:11:04:02:01:05:00:00:00:00:00:00:00
+0x6ea0:	31:11:22:33:44:04:00:00:00:01:00:00:00:00:00:00
+0x6eb0:	41:04:64:65:76:31:BB:BB:BB:BB:BB:BB:BB:BB:BB:BB
+0x6ec0:	03:77:82:9A:07:17:06:1E:00:00:00:00:00:00:00:00
+0x6ed0:	22:1E:14:20:11:04:02:01:05:00:00:00:00:00:00:00
+0x6ee0:	32:21:22:23:24:04:00:00:00:01:00:00:00:00:00:00
+0x6ef0:	42:04:64:65:76:32:BB:BB:BB:BB:BB:BB:BB:BB:BB:BB
+0x6f00:	03:77:82:9A:07:0D:06:1F:00:00:00:00:00:00:00:00
+0x6f10:	22:1F:14:20:11:04:02:01:05:00:00:00:00:00:00:00
+0x6f20:	32:21:22:23:24:04:00:00:00:01:00:00:00:00:00:00
+0x6f30:	42:04:64:65:76:33:BB:BB:BB:BB:BB:BB:BB:BB:BB:BB
+0x6f40:	03:77:82:9A:07:02:06:20:00:00:00:00:00:00:00:00
+0x6f50:	23:20:14:20:11:04:02:01:05:00:00:00:00:00:00:00
+0x6f60:	33:01:01:01:01:04:00:00:00:01:00:00:00:00:00:00
+0x6f70:	43:07:6E:6F:6E:63:65:41:41:BB:BB:BB:BB:BB:BB:BB
+0x6f80:	03:77:82:9A:07:0E:06:21:00:00:00:00:00:00:00:00
+0x6f90:	23:21:14:20:11:04:02:01:05:00:00:00:00:00:00:00
+0x6fa0:	33:01:01:01:01:04:00:00:00:01:00:00:00:00:00:00
+0x6fb0:	43:07:6E:6F:6E:63:65:42:42:BB:BB:BB:BB:BB:BB:BB
+0x6fc0:	03:77:82:9A:07:0E:06:22:00:00:00:00:00:00:00:00
+0x6fd0:	24:22:08:40:6A:04:02:02:07:00:00:00:00:00:00:00
+0x6fe0:	34:ED:22:3C:7C:1E:00:00:00:01:00:00:00:00:00:00
+0x6ff0:	44:0E:4D:58:20:41:6E:79:77:68:65:72:65:20:32:53
+0x7000:	FF:FF:FF:FF:FF:FF:FF:FF:FF:FF:FF:FF:FF:FF:FF:FF
+0x7010:	FF:FF:FF:FF:FF:FF:FF:FF:FF:FF:FF:FF:FF:FF:FF:FF
+0x7020:	FF:FF:FF:FF:FF:FF:FF:FF:FF:FF:FF:FF:FF:FF:FF:FF
+0x7030:	FF:FF:FF:FF:FF:FF:FF:FF:FF:FF:FF:FF:FF:FF:FF:FF
+0x7040:	FF:FF:FF:FF:FF:FF:FF:FF:FF:FF:FF:FF:FF:FF:FF:FF
+0x7050:	FF:FF:FF:FF:FF:FF:FF:FF:FF:FF:FF:FF:FF:FF:FF:FF
+0x7060:	FF:FF:FF:FF:FF:FF:FF:FF:FF:FF:FF:FF:FF:FF:FF:FF
+0x7070:	FF:FF:FF:FF:FF:FF:FF:FF:FF:FF:FF:FF:FF:FF:FF:FF
+0x7080:	FF:FF:FF:FF:FF:FF:FF:FF:FF:FF:FF:FF:FF:FF:FF:FF
+0x7090:	FF:FF:FF:FF:FF:FF:FF:FF:FF:FF:FF:FF:FF:FF:FF:FF
+0x70a0:	FF:FF:FF:FF:FF:FF:FF:FF:FF:FF:FF:FF:FF:FF:FF:FF
+0x70b0:	FF:FF:FF:FF:FF:FF:FF:FF:FF:FF:FF:FF:FF:FF:FF:FF
+0x70c0:	FF:FF:FF:FF:FF:FF:FF:FF:FF:FF:FF:FF:FF:FF:FF:FF
+0x70d0:	FF:FF:FF:FF:FF:FF:FF:FF:FF:FF:FF:FF:FF:FF:FF:FF
+0x70e0:	FF:FF:FF:FF:FF:FF:FF:FF:FF:FF:FF:FF:FF:FF:FF:FF
+0x70f0:	FF:FF:FF:FF:FF:FF:FF:FF:FF:FF:FF:FF:FF:FF:FF:FF
+0x7100:	FF:FF:FF:FF:FF:FF:FF:FF:FF:FF:FF:FF:FF:FF:FF:FF
+0x7110:	FF:FF:FF:FF:FF:FF:FF:FF:FF:FF:FF:FF:FF:FF:FF:FF
+0x7120:	FF:FF:FF:FF:FF:FF:FF:FF:FF:FF:FF:FF:FF:FF:FF:FF
+0x7130:	FF:FF:FF:FF:FF:FF:FF:FF:FF:FF:FF:FF:FF:FF:FF:FF
+
+
+Same memory read with modified firmware
+-----------------------------------------
+
+MemType 0x02 addr 0x6e00: 3f ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff
+MemType 0x02 addr 0x6e10: 02 12 01 00 19 88 02 04 00 00 00 00 00 00 00 00
+MemType 0x02 addr 0x6e20: 03 77 82 9a 07 02 06 1b 00 00 00 00 00 00 00 00
+MemType 0x02 addr 0x6e30: 7c 11 11 30 e2 20 01 2c 11 00 00 00 00 00 00 00
+MemType 0x02 addr 0x6e40: 03 77 82 9a 07 15 06 1c 00 00 00 00 00 00 00 00
+MemType 0x02 addr 0x6e50: 20 1c 14 20 11 04 00 01 0d 1a 00 00 00 00 00 00
+MemType 0x02 addr 0x6e60: 30 2a 22 36 d8 1a 40 00 00 02 00 00 00 00 00 00
+MemType 0x02 addr 0x6e70: 40 04 4b 35 32 30 20 20 20 20 20 20 20 20 20 20
+MemType 0x02 addr 0x6e80: 03 77 82 9a 07 05 06 1d 00 00 00 00 00 00 00 00
+MemType 0x02 addr 0x6e90: 21 1d 14 20 11 04 02 01 05 00 00 00 00 00 00 00
+MemType 0x02 addr 0x6ea0: 31 11 22 33 44 04 00 00 00 01 00 00 00 00 00 00
+MemType 0x02 addr 0x6eb0: 41 04 64 65 76 31 bb bb bb bb bb bb bb bb bb bb
+MemType 0x02 addr 0x6ec0: 03 77 82 9a 07 17 06 1e 00 00 00 00 00 00 00 00
+MemType 0x02 addr 0x6ed0: 22 1e 14 20 11 04 02 01 05 00 00 00 00 00 00 00
+MemType 0x02 addr 0x6ee0: 32 21 22 23 24 04 00 00 00 01 00 00 00 00 00 00
+MemType 0x02 addr 0x6ef0: 42 04 64 65 76 32 bb bb bb bb bb bb bb bb bb bb
+MemType 0x02 addr 0x6f00: 03 77 82 9a 07 0d 06 1f 00 00 00 00 00 00 00 00
+MemType 0x02 addr 0x6f10: 22 1f 14 20 11 04 02 01 05 00 00 00 00 00 00 00
+MemType 0x02 addr 0x6f20: 32 21 22 23 24 04 00 00 00 01 00 00 00 00 00 00
+MemType 0x02 addr 0x6f30: 42 04 64 65 76 33 bb bb bb bb bb bb bb bb bb bb
+MemType 0x02 addr 0x6f40: 03 77 82 9a 07 02 06 20 00 00 00 00 00 00 00 00
+MemType 0x02 addr 0x6f50: 23 20 14 20 11 04 02 01 05 00 00 00 00 00 00 00
+MemType 0x02 addr 0x6f60: 33 01 01 01 01 04 00 00 00 01 00 00 00 00 00 00
+MemType 0x02 addr 0x6f70: 43 07 6e 6f 6e 63 65 41 41 bb bb bb bb bb bb bb
+MemType 0x02 addr 0x6f80: 03 77 82 9a 07 0e 06 21 00 00 00 00 00 00 00 00
+MemType 0x02 addr 0x6f90: 23 21 14 20 11 04 02 01 05 00 00 00 00 00 00 00
+MemType 0x02 addr 0x6fa0: 33 01 01 01 01 04 00 00 00 01 00 00 00 00 00 00
+MemType 0x02 addr 0x6fb0: 43 07 6e 6f 6e 63 65 42 42 bb bb bb bb bb bb bb
+MemType 0x02 addr 0x6fc0: 03 77 82 9a 07 0e 06 22 00 00 00 00 00 00 00 00
+MemType 0x02 addr 0x6fd0: 24 22 08 40 6a 04 02 02 07 00 00 00 00 00 00 00
+MemType 0x02 addr 0x6fe0: 34 ed 22 3c 7c 1e 00 00 00 01 00 00 00 00 00 00
+MemType 0x02 addr 0x6ff0: 44 0e 4d 58 20 41 6e 79 77 68 65 72 65 20 32 53
+MemType 0x02 addr 0x7000: 00 77 82 9a 07 20 11 88 02 e3 cc 34 83 7f 38 ee
+MemType 0x02 addr 0x7010: 1b ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff
+MemType 0x02 addr 0x7020: 01 77 82 9a 07 20 11 88 02 00 00 00 00 ec 1c 6a
+MemType 0x02 addr 0x7030: 48 ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff
+MemType 0x02 addr 0x7040: 02 77 82 9a 07 20 11 88 02 aa bb cc dd a7 de 8d
+MemType 0x02 addr 0x7050: ea ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff
+MemType 0x02 addr 0x7060: 03 77 82 9a 07 20 11 88 02 bb bb bb bb 19 be fe
+MemType 0x02 addr 0x7070: 16 ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff
+MemType 0x02 addr 0x7080: 04 77 82 9a 07 40 6a 88 02 e0 93 77 60 25 ca cc
+MemType 0x02 addr 0x7090: a0 ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff
+MemType 0x02 addr 0x70a0: 05 77 82 9a 07 40 6a 88 02 00 00 00 00 37 85 c0
+MemType 0x02 addr 0x70b0: c9 ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff
+MemType 0x02 addr 0x70c0: ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff
+MemType 0x02 addr 0x70d0: ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff
+MemType 0x02 addr 0x70e0: ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff
+MemType 0x02 addr 0x70f0: ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff
+MemType 0x02 addr 0x7100: ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff
+MemType 0x02 addr 0x7110: ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff
+
+
+
+Raw keygen data analysis (0x7001, 0x7021, 0x7041 ... 0x70a1)
+---------------------------------------------------------------------------
+
+Byte number               f  0  1  2  3  4  5  6  7  8  9  a  b  c  d  e  continues in next line
+MemType 0x02 addr 0x7000: 00 77 82 9a 07 20 11 88 02 e3 cc 34 83 7f 38 ee
+MemType 0x02 addr 0x7010: 1b ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff
+MemType 0x02 addr 0x7020: 01 77 82 9a 07 20 11 88 02 00 00 00 00 ec 1c 6a
+MemType 0x02 addr 0x7030: 48 ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff
+MemType 0x02 addr 0x7040: 02 77 82 9a 07 20 11 88 02 aa bb cc dd a7 de 8d
+MemType 0x02 addr 0x7050: ea ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff
+MemType 0x02 addr 0x7060: 03 77 82 9a 07 20 11 88 02 bb bb bb bb 19 be fe
+MemType 0x02 addr 0x7070: 16 ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff
+MemType 0x02 addr 0x7080: 04 77 82 9a 07 40 6a 88 02 e0 93 77 60 25 ca cc
+MemType 0x02 addr 0x7090: a0 ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff
+MemType 0x02 addr 0x70a0: 05 77 82 9a 07 40 6a 88 02 00 00 00 00 37 85 c0
+MemType 0x02 addr 0x70b0: c9 ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff
+
+
+byte -1: device number (associated during pairing)
+byte 0..3: dongle serial
+byte 4..5: device WPID
+byte 6..7: 0x88 0x22 hardcoded into firmware code, but exchanged during pairing as dongle WPID (likely dongle dependent)
+byte 8..b: nonce send by device during pairing
+byte c..f: nonce presented by the dongle during pairing
+
+
+RF pairing, with key info
+----------------------------
+
+1) Device pairing phase 1 request
+===============================================================================
+
+aa 5f 01 01 02 03 04 05 14 20 11 04 02 01 05 00 00 00 00 00 00 96
+
+------------------------------------------------------------------
+00 01 02 03 04 05 06 07 08 09 0a 0b 0c 0d 0e 0f 10 11 12 13 14 15
+
+00:     0xaa random sequence byte used throughout this pairing phase
+01:     0x5f indicates pairing request with follow up data,
+02:     0x01 indicates pairing phase 1
+03..07: dongle address the device is currently using !! info leak of 4 bytes keydata !! changed randomly by newr devices <--
+08:     ...
+09..0a: WPID of device !!! byte 4..5 of raw key material !!! <--
+0b:
+0c:
+0d:
+0e:
+10..14: padding
+15:     Logitech chksm 
+
+2) Pairing phase 1 response (after ack pulling, see pairing note for details)
+===============================================================================
+
+aa 1f 01 77 82 9a 07 21 14 88 02 04 00 01 05 00 00 00 00 00 00 d3
+
+------------------------------------------------------------------
+00 01 02 03 04 05 06 07 08 09 0a 0b 0c 0d 0e 0f 10 11 12 13 14 15
+
+00:     0xaa sequence byte used throughout this pairing phase
+01:     0x1f indicates pairing response with follow up data,
+02:     0x01 indicates pairing phase 1
+03..07: address the device should use !!! byte 0..3 of raw key material  !!! <--
+08:     ...
+09..0a: WPID of dongle !!! byte 6..7 of raw key material !!! <--
+0b:
+0c:
+0d:
+0e:
+10..14: padding
+15:     Logitech chksm 
+
+3) Device pairing phase 2 request
+==============================================================================
+
+bb 5f 02 bb bb bb bb 01 01 01 01 04 00 00 00 01 00 00 00 00 00 ef
+
+------------------------------------------------------------------
+00 01 02 03 04 05 06 07 08 09 0a 0b 0c 0d 0e 0f 10 11 12 13 14 15
+
+00:     0xbb random sequence byte used throughout this pairing phase
+01:     0x5f indicates pairing request with follow up data,
+02:     0x02 indicates pairing phase 2
+03..06: device nonce !!! byte 8..b of raw key material  !!! <--
+07..0a: device serial (distinguish devices of same type)
+0b:
+0c:
+0d:
+0e:
+10..14: padding
+15:     Logitech chksm 
+
+4) Pairing phase 2 response (after ack pulling, see pairing note for details)
+=============================================================================
+
+bb 1f 02 19 be fe 16 01 01 01 01 04 00 00 00 01 00 00 00 00 00 30
+
+------------------------------------------------------------------
+00 01 02 03 04 05 06 07 08 09 0a 0b 0c 0d 0e 0f 10 11 12 13 14 15
+
+00:     0xbb random sequence byte used throughout this pairing phase
+01:     0x1f indicates pairing response with follow up data,
+02:     0x02 indicates pairing phase 2
+03..06: dongle nonce !!! byte c..f of raw key material  !!! <--
+07..0a: device serial from request
+0b:
+0c:
+0d:
+0e:
+10..14: padding
+15:     Logitech chksm 
+
+5) Pairing phase 3
+=============================================================================
+
+Not of relevance for key generation
+
+
+6) Resulting raw key material (stored at XDATA 0x7001 + deviceIdx * 0x20)
+=============================================================================
+
+77 82 9a 07 20 11 88 02 bb bb bb bb 19 be fe 16
+
+-----------------------------------------------
+AA AA AA AA BB BB CC CC DD DD DD DD EE EE EE EE
+
+AA: dongle serial from pairing response phase 1 (leaked in request under special conditions)
+BB: device WPID from pairing request phase 1
+CC: dongle WPID from pairing response phase 1
+DD: device nonce from pairing request phase 2
+EE: dongle nonce from pairing response phase 2
+
+6) Deriving keys from key material (stored at external RAM 0x81e0 + deviceIdx * 0x10)
+=============================================================================
+
+0 0x77 --> byte 2 of key
+1 0x82 --> complement is byte 1 of key (0x7d)
+2 0x9a --> complement is byte 5 of key (0x65)
+3 0x07 --> byte 3 of key
+4 0x20 --> byte 14 of key  
+5 0x11 --> byte 11 of key 
+6 0x88 --> byte 9 of key
+7 0x02 --> byte 0 of key
+8 0xbb --> byte 8 of key
+9 0xbb --> XOR'ed with 0x55 is byte 6 of key (0xee)
+a 0xbb --> byte 4 of key
+b 0xbb --> byte 15 of key 
+c 0x19 --> complement is byte 10 of key (0xe6)
+d 0xbe --> byte 12 of key
+e 0xfe --> byte 7 of key
+f 0x16 --> XOR'ed with 0x55 is byte 13 of key (0x43)
+
+Resulting key
+
+02 7d 77 07 bb 65 ee fe bb 88 e6 11 be 43 20 bb
+
+-----------------------------------------------
+00 01 02 03 04 05 06 07 08 09 0a 0b 0c 0d 0e 0f
+
+
+
+Note: there's a set_long_register_request which allows to overwrite the 
+resulting keydata and needs further investigation.
+
+Keygen
+---------
+
+0  / 82be: 2a --> byte 2 of key
+1  / 82bf: 22 --> complement is byte 1 of key (0xdd)
+2  / 82c0: 36 --> complement is byte 5 of key (0xc9)
+3  / 82c1: d8 --> byte 3 of key
+4  / 82c2: 1a --> byte 14 of key  
+5  / 82c3: 40 --> byte 11 of key 
+6  / 82c4: 00 --> byte 9 of key
+7  / 82c5: 00 --> byte 0 of key
+8  / 82c6: 02 --> byte 8 of key
+9  / 82c7: 00 --> XOR'ed with 0x55 is byte 6 of key (0x55)
+10 / 82c8: 00 --> byte 4 of key
+11 / 82c9: 00 --> byte 15 of key 
+12 / 82ca: 00 --> complement is byte 10 of key (0xff)
+13 / 82cb: 00 --> byte 12 of key
+14 / 82cc: 00 --> byte 7 of key
+15 / 82cd: 40 --> XOR'ed with 0x55 is byte 13 of key (0x15)
+
